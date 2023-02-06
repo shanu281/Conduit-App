@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 const Header = () => {
@@ -10,37 +11,47 @@ const Header = () => {
         </a>
         <ul className="nav navbar-nav pull-xs-right">
           <li className="nav-item">
-            <a className="nav-link active" href="">
-              Home
-            </a>
+            <NavLink to="/home">
+              <a className="nav-link " href="">
+                Home
+              </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
-              {" "}
-              <i className="ion-compose"></i>&nbsp;New Article{" "}
-            </a>
+            <NavLink to="/new-article">
+              <a className="nav-link" href="">
+                {" "}
+                <i className="ion-compose"></i>&nbsp;New Article{" "}
+              </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
-              {" "}
-              <i className="ion-gear-a"></i>&nbsp;Settings{" "}
-            </a>
+            <NavLink to="/settings">
+              <a className="nav-link" href="">
+                {" "}
+                <i className="ion-gear-a"></i>&nbsp;Settings{" "}
+              </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
-              Sign in
-            </a>
+            <NavLink to="/sign-in">
+              <a className="nav-link" href="">
+                Sign in
+              </a>
+            </NavLink>
           </li>
+
           <li className="nav-item">
             {" "}
-            <a className="nav-link" href="">
-              Sign up
-            </a>
+            <NavLink to="/register">
+              <a className="nav-link" href="">
+                Register
+              </a>
+            </NavLink>
           </li>
         </ul>
       </div>
     </nav>
-   
   );
 };
 
