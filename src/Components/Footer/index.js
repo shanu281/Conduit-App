@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Footer = () => {
+  
+  
   return (
     <footer>
   <div className="container">
@@ -15,3 +17,8 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+
+
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState}from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Route, Routes } from "react-router-dom";
@@ -10,12 +10,19 @@ import NewArticle from "../NewArticle";
 
 // import Profile from "../Profile";
 
+
 const App = () => {
+//   const [newArticle, setNewArticle] = useState("hw")
+
+//   const handlePublish = (e) => {
+//     setNewArticle(e.target.value)
+//   }
+// console.log(newArticle)
   return (
     <div>
       <Header />
       <Routes>
-      <Route element={<Home />} path="/" />
+        <Route element={<Home />} path="/" />
         <Route element={<Home />} path="/home" />
         <Route element={<NewArticle />} path="/new-article" />
         <Route element={<Settings />} path="/settings" />
